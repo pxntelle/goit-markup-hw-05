@@ -412,7 +412,8 @@ link {
   color: #8e8f99;
   border: 1px solid #8e8f99;
   border-radius: 4px;
-  transition: color border var(--transition-duration)
+  transition: color var(--transition-duration) var(--transition-timing-function);
+  transition: border var(--transition-duration)
     var(--transition-timing-function);
 }
 
