@@ -14,6 +14,10 @@
   /* fonts */
   --font-main: "Roboto", sans-serif;
   --font-logo: "Raleway", sans-serif;
+
+  /* transitions */
+  --transition-duration: 250ms;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -65,6 +69,7 @@ img {
 button,
 link {
   cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container {
@@ -203,6 +208,9 @@ link {
   border: 1px solid transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .hero-button:active,
@@ -345,6 +353,8 @@ link {
   background-color: var(--primary-brand);
   border-radius: 50%;
   padding: 12px;
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .icon-box .link:active,
@@ -369,7 +379,7 @@ link {
   padding-bottom: 120px;
 }
 
-.customers-link {
+/* .customers-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -378,7 +388,9 @@ link {
   fill: #8e8f99;
   border: 1px solid #8e8f99;
   border-radius: 4px;
-}
+  transition: color border var(--transition-duration)
+    var(--transition-timing-function);
+} */
 
 .customers .list {
   display: flex;
@@ -390,6 +402,7 @@ link {
   width: 168px;
   height: 88px;
 }
+
 .list-customers .link {
   display: flex;
   align-items: center;
@@ -399,6 +412,8 @@ link {
   color: #8e8f99;
   border: 1px solid #8e8f99;
   border-radius: 4px;
+  transition: color border var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .list-customers .link:hover,
