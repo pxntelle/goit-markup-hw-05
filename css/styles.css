@@ -607,7 +607,6 @@ link {
 
 .all-projects-list.link:hover .thumb-text,
 .all-projects-list.link:focus .thumb-text {
-  /* opacity: 1; */
   transform: translate (0, 0);
 }
 
