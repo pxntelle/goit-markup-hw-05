@@ -600,7 +600,7 @@ link {
   color: var(--light);
   background-color: var(--primary-brand);
 
-  transform: translateY(100%);
+  transform: translate (0, 100%);
   transition: transform var(--transition-duration)
     var(--transition-timing-function);
 }
@@ -608,7 +608,7 @@ link {
 .all-projects-list.link:hover .thumb-text,
 .all-projects-list.link:focus .thumb-text {
   /* opacity: 1; */
-  transform: translateY(0);
+  transform: translate (0, 0);
 }
 
 /* modal */
