@@ -156,6 +156,7 @@ link {
   line-height: 1.5;
   color: var(--dark);
   text-decoration: none;
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .header-link:hover,
@@ -176,6 +177,7 @@ link {
   font-size: 16px;
   line-height: 1.5;
   color: var(--text);
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .header-contact:hover,
